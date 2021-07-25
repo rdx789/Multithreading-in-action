@@ -20,7 +20,7 @@ int main()
 	callWritePrimesMultipleThreadsEff_mtx(0, 10000, "primes2_sync.txt", NUM_OF_THREADS);
 
 	//callWritePrimesMultipleThreads(0, 1000000, "primes2.txt", NUM_OF_THREADS);
-    //================================================================================
+        //================================================================================
 
 	//std::cout << "\nOnly one thread is running " << std::endl;
 	//callWritePrimesMultipleThreads(0, 1000, "primes2.txt", 1);
@@ -30,6 +30,5 @@ int main()
 
 
 	//system("pause");
-	//getchar();
 	return 0;
 }

@@ -20,7 +20,7 @@ void I_Love_Threads()
 void call_I_Love_Threads()
 {
 	std::thread t1(I_Love_Threads);
-    t1.join();
+        t1.join();
 }
 
 // O(n)
@@ -137,9 +137,9 @@ std::vector<int> retGetPrimes(int begin, int end)
 
 uint64_t nanos()
 {
-    uint64_t ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::high_resolution_clock::
+        uint64_t ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::high_resolution_clock::
                   now().time_since_epoch()).count();
-    return ns; 
+        return ns; 
 } 
 
 void callWritePrimesMultipleThreads(int begin, int end, std::string filePath, int N)
